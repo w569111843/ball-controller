@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/buttonBarStyle"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:weightSum="4"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/upload_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/upload"
+        android:textColor="#007AFF" />
+
+    <Button
+        android:id="@+id/play_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/play"
+        android:textColor="#007AFF" />
+
+    <Button
+        android:id="@+id/pause_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/pause"
+        android:textColor="#007AFF" />
+
+    <Button
+        android:id="@+id/mute_voice_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/muted"
+            android:textColor="#007AFF" />
+</LinearLayout>

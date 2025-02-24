@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp">
+    <include android:id="@+id/battery_bar_include"
+        layout="@layout/battery_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include android:id="@+id/storage_space_bar"
+        layout="@layout/storage_space_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include android:id="@+id/voice_setting"
+        layout="@layout/voice_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include android:id="@+id/button_bar"
+        layout="@layout/button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:padding="20dp"
+    >
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.ball.ui.common.DeliveryHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/file_list_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:background="#fff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            />
+        <com.scwang.smart.refresh.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</FrameLayout>
+</LinearLayout>

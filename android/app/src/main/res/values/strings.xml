@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">球球控制器</string>
+    <string name="upload">上传</string>
+    <string name="muted">静音</string>
+    <string name="cancel_mute">取消静音</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="delete">删除</string>
+</resources>

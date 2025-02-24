@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.ball.SwipeDragLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <LinearLayout
+        android:id="@+id/id_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:background="#00ffff"
+            android:text="删除" />
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:background="#00ffff"
+            android:text="播放" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fileContent"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/fileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fileCreationTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creation Time"
+                android:textSize="14sp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/fileSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="File Size"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="end" />
+        </LinearLayout>
+    </LinearLayout>
+</com.example.ball.SwipeDragLayout>

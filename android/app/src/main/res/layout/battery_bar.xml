@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 已用存储文本 -->
+    <TextView
+        android:id="@+id/battery_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剩余电量: 0%"
+        android:textColor="#808080"
+        android:textSize="14sp"
+        android:layout_gravity="end"/>
+
+    <!-- 存储进度条 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="8dp">
+        <!-- 背景进度条 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E0E0E0"
+            android:layout_gravity="center_vertical" />
+
+        <!-- 已用存储的进度条 -->
+        <View
+            android:id="@+id/battery_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#007AFF"
+            android:layout_gravity="center_vertical" />
+    </RelativeLayout>
+
+</LinearLayout>
